@@ -7,7 +7,7 @@ To run this code you'll need to install the following packages
 inside your virtual machine:
 
     sudo apt-get install libgeos-3.3.3 python-mpltoolkits.basemap python-mpltoolkits.basemap-data python-mpltoolkits.basemap-doc
-    sudo apt git install python-pandas
+    sudo apt-get install python-pandas
 
 Running Code
 -------------
