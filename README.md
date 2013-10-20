@@ -16,7 +16,7 @@ Running Code
 
 * Open Virtual Machine and cd into the directory that you want to save the earthquake data to
 
-Then run the notebook from your machine with this command:
+Then run ipython notebook from your machine with this command:
 
     ipython notebook --no-browser --ip=0.0.0.0 --script --pylab=inline
 
