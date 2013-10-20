@@ -59,7 +59,7 @@ import datetime
 
 today = datetime.date.today()
 today  = str(today)
-Name = 'EarthQuakeData' + today
+Name = 'EarthQuakeData' + today + 'txt'
 
 df.to_csv(Name)
 
