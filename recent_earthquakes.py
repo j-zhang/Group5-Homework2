@@ -89,3 +89,4 @@ def plot_quakes(quakes):
 
 plot_quakes(california)
 
+
