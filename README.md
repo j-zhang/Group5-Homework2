@@ -20,12 +20,12 @@ Then run ipython notebook from your machine with this command:
 
     ipython notebook --no-browser --ip=0.0.0.0 --script --pylab=inline
 
-* Open ipython notebook in your browser and import the file 'recent_earthquakes.py' from this repository that you cloned
+* Open ipython notebook in your browser and import the file 'recent_earthquakes.py'. This file will be located in the clone of this repository on your desktop. 
 
-* Run each code cell to read in live earthquake data
+* Open 'recent earthquakes' in ipython notebook and run each code cell to read in live earthquake data
 
 * Run code cell 4 to cache data
 
-* The cached data will be titled "EarthQuakeData" followed by the date
+* The cached data will be titled "EarthQuakeData" followed by the date (year-month-day) and .txt
 
 * The cached data will be saved to the directory in which you ran ipython notebook
