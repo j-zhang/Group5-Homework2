@@ -13,6 +13,6 @@ Group5-Homework2
 
 6. To cache data, run code cell 4.
 
-7. The cached data will be tited "EarthQuakeData" followed by the date
+7. The cached data will be titled "EarthQuakeData" followed by the date
 
 8. The cached data will be saved to the directory in which you ran ipython notebook
