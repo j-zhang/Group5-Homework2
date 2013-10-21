@@ -75,18 +75,23 @@ california.Lat[0:5]
 from mpl_toolkits.basemap import Basemap
 
 def plot_quakes(quakes):
-    m = Basemap(llcrnrlon=-124.960938,llcrnrlat=41.956070,
-                urcrnrlon=-114.062500,urcrnrlat=32.236792,
+    m = Basemap(llcrnrlon=min(quakes.Lon),llcrnrlat=min(quakes.Lat),
+                urcrnrlon=max(quakes.Lon),urcrnrlat=max(quakes.Lat),
                 resolution='l',area_thresh=1000.,projection='merc',
-                lat_0=37.147894,lon_0=-119.599609)
+                lat_0=62.9540,lon_0=-149.2697)
     m.drawcoastlines()
     m.drawcountries()
     m.fillcontinents(color='coral',lake_color='blue')
     m.drawmapboundary(fill_color='aqua')
-    x, y = m(quakes.Lon, quakes.Lat)
+    
+   # for lon, lat, mag in zip(quakes.Lon, quakes.Lat, quakes.Magnitude):
+        #x,y=m(lon,lat)
+        #msize = mag * 10
+        #m.plot(x, y, markersize = msize)
+    x, y = m(quakes.Lon, quakes.Lat) 
     m.plot(x, y, 'k.')
     return m
 
-plot_quakes(california)
+plot_quakes(alaska)
 
 
